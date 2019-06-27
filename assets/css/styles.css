@@ -8,6 +8,18 @@
     src: url("../fonts/Playlist-Caps.otf") format('opentype');
 }
 
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-10px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -40,6 +52,7 @@ body {
 .header-text-container .header {
     font-size: 8em;
     font-family: "Playlist-Script";
+    animation: float 5s ease-in-out infinite;
 }
 
 .header-text-container .sub-header {
@@ -310,7 +323,7 @@ body {
 
 /* ===== Media CSS ===== */
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .cloud-image-two {
         left: 100px;
         top: -100px;
@@ -328,6 +341,9 @@ body {
     }
     .content-container .section {
         padding: 2em 10px;
+    }
+    .content-container p {
+        font-size: 14px;
     }
 }
 
