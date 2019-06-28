@@ -39,7 +39,7 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
-    overflow-y: hidden;
+    overflow: hidden;
 }
 
 .header-text-container {
@@ -347,3 +347,9 @@ body {
     }
 }
 
+@media screen and (max-width: 450px) {
+    .header-text-container .header {
+        line-height: 1;
+        margin-bottom: 30px;
+    }
+}
